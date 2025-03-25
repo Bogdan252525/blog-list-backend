@@ -1,0 +1,9 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZhc3lhIiwiaWQiOiI2N2UxOGUyNjllZjNhZTg3NjI5ZTUxYjUiLCJpYXQiOjE3NDI4MzUzNDUsImV4cCI6MTc0MjgzODk0NX0.sAZ-X7X1tixLlc9Tr-vDN89rSKf5IV47iC4vFey-cfI
+
+{
+"title": "vasya1",
+"url": "vasya1",
+"likes": 1
+}
