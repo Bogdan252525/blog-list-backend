@@ -39,6 +39,10 @@ const tokenExtractor = (request, response, next) => {
 };
 
 const userExtractor = async (request, response, next) => {
+  if ((request.path === '/api/blogs' && request.method === 'GET') || request.path === '/api/testing') {
+    return next();
+  }
+
   const authorization = request.get('authorization');
   if (!authorization || !authorization.startsWith('Bearer ')) {
     return response.status(401).json({ error: 'token missing or invalid' });
